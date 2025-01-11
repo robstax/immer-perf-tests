@@ -17,6 +17,18 @@ importers:
       immer10:
         specifier: npm:immer@10
         version: immer@10.1.1
+      immer10Each:
+        specifier: file:.yalc/immer
+        version: immer@file:.yalc/immer
+      immer2:
+        specifier: npm:immer@2
+        version: immer@2.1.5
+      immer3:
+        specifier: npm:immer@3
+        version: immer@3.3.0
+      immer4:
+        specifier: npm:immer@4
+        version: immer@4.0.2
       immer5:
         specifier: npm:immer@5
         version: immer@5.3.6
@@ -56,6 +68,15 @@ packages:
   immer@10.1.1:
     resolution: {integrity: sha512-s2MPrmjovJcoMaHtx6K11Ra7oD05NT97w1IC5zpMkT6Atjr7H8LjaDd81iIxUYpMKSRRNMJE703M1Fhr/TctHw==}
 
+  immer@2.1.5:
+    resolution: {integrity: sha512-xyjQyTBYIeiz6jd02Hg12jV+9QISwF1crLcwTlzHpWH4e0ryNWj1kacpTwimK3bJV5NKKXw458G2vpqoB/inFA==}
+
+  immer@3.3.0:
+    resolution: {integrity: sha512-vlWRjnZqoTHuEjadquVHK3GxsXe1gNoATffLEA8Qbrdd++Xb+wHEFiWtwAKTscMBoi1AsvEMXhYRzAXA8Ex9FQ==}
+
+  immer@4.0.2:
+    resolution: {integrity: sha512-Q/tm+yKqnKy4RIBmmtISBlhXuSDrB69e9EKTYiIenIKQkXBQir43w+kN/eGiax3wt1J0O1b2fYcNqLSbEcXA7w==}
+
   immer@5.3.6:
     resolution: {integrity: sha512-pqWQ6ozVfNOUDjrLfm4Pt7q4Q12cGw2HUZgry4Q5+Myxu9nmHRkWBpI0J4+MK0AxbdFtdMTwEGVl7Vd+vEiK+A==}
 
@@ -70,6 +91,9 @@ packages:
 
   immer@9.0.21:
     resolution: {integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==}
+
+  immer@file:.yalc/immer:
+    resolution: {directory: .yalc/immer, type: directory}
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
@@ -117,6 +141,12 @@ snapshots:
 
   immer@10.1.1: {}
 
+  immer@2.1.5: {}
+
+  immer@3.3.0: {}
+
+  immer@4.0.2: {}
+
   immer@5.3.6: {}
 
   immer@6.0.9: {}
@@ -126,6 +156,8 @@ snapshots:
   immer@8.0.4: {}
 
   immer@9.0.21: {}
+
+  immer@file:.yalc/immer: {}
 
   isexe@2.0.0: {}
 
