@@ -1,6 +1,9 @@
 /* eslint-disable no-inner-declarations */
 //import {measure} from "./measure.mjs"
 
+import {produce as produce2, setAutoFreeze as setAutoFreeze2} from "immer2"
+import {produce as produce3, setAutoFreeze as setAutoFreeze3} from "immer3"
+import {produce as produce4, setAutoFreeze as setAutoFreeze4} from "immer4"
 import {produce as produce5, setAutoFreeze as setAutoFreeze5} from "immer5"
 import {produce as produce6, setAutoFreeze as setAutoFreeze6} from "immer6"
 import {produce as produce7, setAutoFreeze as setAutoFreeze7} from "immer7"
@@ -56,10 +59,13 @@ const actions = {
 }
 
 const immerProducers = {
-  // immer5: produce5,
-  // immer6: produce6,
-  // immer7: produce7,
-  // immer8: produce8,
+  immer2: produce2,
+  immer3: produce3,
+  immer4: produce4,
+  immer5: produce5,
+  immer6: produce6,
+  immer7: produce7,
+  immer8: produce8,
   immer9: produce9,
   immer10: produce10,
   mutative: produceMutative,
@@ -68,10 +74,13 @@ const immerProducers = {
 
 const setAutoFreezes = {
   vanilla: () => {},
-  // immer5: setAutoFreeze5,
-  // immer6: setAutoFreeze6,
-  // immer7: setAutoFreeze7,
-  // immer8: setAutoFreeze8,
+  immer2: setAutoFreeze2,
+  immer3: setAutoFreeze3,
+  immer4: setAutoFreeze4,
+  immer5: setAutoFreeze5,
+  immer6: setAutoFreeze6,
+  immer7: setAutoFreeze7,
+  immer8: setAutoFreeze8,
   immer9: setAutoFreeze9,
   immer10: setAutoFreeze10,
   mutative: () => {},
@@ -130,7 +139,6 @@ const createImmerReducer = (produce) => {
           break
         case "test/removeItem":
           draft.largeArray.splice(action.payload, 1)
-
           break
         case "test/updateItem": {
           const item = draft.largeArray.find(
